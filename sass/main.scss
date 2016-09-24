@@ -128,5 +128,11 @@ footer {
     display: block;
 }
 
+.anim-list {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
 @import "fancybox-override";
 @import "mobile";
