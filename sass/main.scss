@@ -6,6 +6,7 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
+@import 'https://fonts.googleapis.com/css?family=Rubik:300,400,700';
 
 /* Bootstrap Variables Goes Here */
 
@@ -17,6 +18,8 @@ $brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
     padding-top: 70px;
+    background: radial-gradient(circle at 50%, #ffffff, #eaeaea, #dcdcdc);
+    height: 100vh;
 }
 
 img.loading {
@@ -37,6 +40,11 @@ img.doneLoading {
 
 nav li:hover .dropdown-menu {
     display: block;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 #map img {
@@ -129,9 +137,54 @@ footer {
 }
 
 .anim-list {
+    font-family: Rubik;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 0.6);
+}
+
+.foot-txt {
+    font-size: 16px;
+}
+
+.icons-bg {
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 3px;
+    width: 35px;
+    height: 35px;
+    .sl-icons {
+        font-size: 16px;
+        color: grey;
+        line-height: 2.2;
+    }
+}
+
+.main-sec {
+    margin-top: 80px;
+}
+
+.foot {
+    position: fixed;
+    bottom: 70px;
+    background: transparent;
+    width: 100%;
+    // padding: 0 300px;
+}
+
+p {
+    font-family: rubik;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 300;
+    span {
+        font-weight: 500;
+    }
 }
 
 @import "fancybox-override";
