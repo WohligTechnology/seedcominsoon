@@ -145,9 +145,9 @@ footer {
     line-height: 100px;
     letter-spacing: 5px;
     color: #ffffff;
-    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 0);
+    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 1);
     li.masking {
-        background-image: url("../img/bg-image.jpg");
+        // background-image: url("../img/bg-image.jpg");
         background-position: -78px 967px;
         background-size: cover;
         -webkit-background-clip: text;
