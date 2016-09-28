@@ -140,15 +140,15 @@ footer {
     font-family: Rubik;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 125px;
     font-weight: 700;
-    line-height: 125px;
+    line-height: 100px;
     letter-spacing: 5px;
     color: #ffffff;
-    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 0.6);
+    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 0);
     li.masking {
         background-image: url("../img/bg-image.jpg");
-        background-position: -16px 1075px;
+        background-position: -78px 967px;
         background-size: cover;
         -webkit-background-clip: text;
         background-clip: text;
@@ -159,15 +159,27 @@ footer {
 .foot-txt {
     font-size: 18px;
 }
-.main-sec{
-    p{
-            color: #393334;
+
+.main-sec {
+    margin-top: 20px;
+    p {
+        color: #393334;
+        font-family: rubik;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-size: 28px;
+        font-weight: 300;
+        padding: 0 56px;
+        span {
+            font-weight: 500;
+        }
     }
 }
+
 .icons-bg {
     border-radius: 50%;
     background-color: #ffffff;
-    margin-right: 3px;
+    margin-right: 7px;
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -181,59 +193,68 @@ footer {
 }
 
 .sl-icons {
-    font-size: 16px;
+    font-size: 21px;
     color: #795f4e;
-    line-height: 2.2;
-}
-
-.main-sec {
-    margin-top: 80px;
+    line-height: 36px;
 }
 
 .foot {
     // position: fixed;
     // bottom: 70px;
-    padding-top:30px;
+    padding-top: 1px;
     background: transparent;
     width: 100%;
     // padding: 0 300px;
 }
 
-p {
-    font-family: rubik;
-    letter-spacing: 1px;
-    font-size: 38px;
-    font-weight: 300;
-    span {
-        font-weight: 500;
-    }
-}
-
+// p {
+//     font-family: rubik;
+//     letter-spacing: 1px;
+//     font-size: 38px;
+//     font-weight: 300;
+//     span {
+//         font-weight: 500;
+//     }
+// }
 .seed1 {
     position: absolute;
-    left: 27%;
+    left: 435px;
+    top: -81px;
 }
 
 .seed2::before {
-    content: url("../img/seed2.png");
+    content: url("../img/rsz_seed2.png");
     height: 15px;
     width: 15px;
     position: absolute;
-    left: 17px;
+    left: -48px;
     top: 14px;
 }
 
 .seed3::after {
-    content: url("../img/seed3.png");
+    content: url("../img/rsz_seed3.png");
     height: 15px;
     width: 15px;
     position: absolute;
-    bottom: 68px;
-    right: 386px;
+    bottom: 42px;
+    right: 310px;
 }
 
 .cent {
-    margin: 0 75px;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.p-space {
+    padding: 15px 0;
+}
+
+.comp-logo {
+    position: absolute;
+    top: -54px;
+    left: 26px;
+    width: 250px;
 }
 
 @import "fancybox-override";

@@ -1,5 +1,129 @@
-@media (max-width: $screen-xs-max) {}
+@media (max-width: 1200px) {
+    .anim-list {
+        font-size: 91px;
+        font-weight: 700;
+        line-height: 76px;
+        letter-spacing: 5px;
+        li.masking {
+            background-image: url("../img/bg-image.jpg");
+            background-position: 2px 655px;
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    .cent {
+        position: relative;
+        margin: 0 auto;
+        width: 700px;
+    }
+    .main-sec p {
+        padding: 0 89px;
+    }
+    .seed3::after {
+        position: absolute;
+        bottom: 20px;
+        right: 350px;
+    }
+    .p-space {
+        padding: 24px 0;
+    }
+    .foot {
+        margin-top: -25px;
+    }
+}
 
-@media (max-width: $screen-sm-max) {}
+@media (max-width: $screen-sm-max) {
+    .anim-list {
+        li.masking {
+            background-position: 2px 662px;
+        }
+    }
+    .cent {
+        position: relative;
+        margin: 0 auto;
+        width: 625px;
+    }
+    .seed3::after {
+        position: absolute;
+        bottom: 8px;
+        right: 162px;
+    }
+}
 
-@media (max-width: $screen-md-max) {}
+@media (max-width: $screen-xs-max) {
+    .anim-list {
+        font-size: 86px;
+        line-height: 70px;
+        letter-spacing: 1px;
+        li.masking {
+            background-image: url("../img/bg-image.jpg");
+            background-position: -7px 593px;
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    .cent {
+        position: relative;
+        margin: 0 auto;
+        width: 565px;
+    }
+    .seed3::after {
+        position: absolute;
+        bottom: 6px;
+        right: 163px;
+    }
+    .foot {
+        margin-top: -55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comp-logo {
+        position: absolute;
+        top: -54px;
+        left: -2px;
+    }
+    .main-sec p {
+        font-size: 18px;
+        padding: 0;
+    }
+    .anim-list {
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: 1px;
+        li.masking {
+            background-image: url("../img/bg-image.jpg");
+            background-position: -7px 656px;
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    .cent {
+        position: relative;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .seed2::before {
+        content: url("../img/rsz_rsz_seed2.png");
+        position: absolute;
+        left: -17px;
+        top: -2px;
+        transform: scale(0.8);
+    }
+    .seed3::after {
+        content: url("../img/rsz_rsz_seed3.png");
+        position: absolute;
+        bottom: -2px;
+        right: 73px;
+        transform: scale(0.8);
+    }
+    .foot {
+        margin-top: -138px;
+    }
+}
