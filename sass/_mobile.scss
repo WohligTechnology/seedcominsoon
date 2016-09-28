@@ -79,14 +79,16 @@
     .foot {
         margin-top: -55px;
     }
+    .seed1 {
+    left: auto;
+    right: 10px;
+        img {
+    width: 75px;
+}
+    }
 }
 
 @media (max-width: 480px) {
-    .comp-logo {
-        position: absolute;
-        top: -54px;
-        left: -2px;
-    }
     .main-sec p {
         font-size: 18px;
         padding: 0;

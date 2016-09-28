@@ -17,9 +17,10 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
-    padding-top: 70px;
+    // padding-top: 70px;
     background: radial-gradient(circle at 50%, #ffffff, #eaeaea, #dcdcdc);
     height: 100vh;
+    overflow: hidden;
 }
 
 img.loading {
@@ -219,7 +220,7 @@ footer {
 .seed1 {
     position: absolute;
     left: 435px;
-    top: -81px;
+    top: 0px;
 }
 
 .seed2::before {
@@ -251,9 +252,6 @@ footer {
 }
 
 .comp-logo {
-    position: absolute;
-    top: -54px;
-    left: 26px;
     width: 250px;
 }
 
