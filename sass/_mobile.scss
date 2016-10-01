@@ -4,14 +4,6 @@
         font-weight: 700;
         line-height: 76px;
         letter-spacing: 5px;
-        li.masking {
-            background-image: url("../img/bg-image.jpg");
-            background-position: 2px 655px;
-            background-size: cover;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
     }
     .cent {
         position: relative;
@@ -24,7 +16,7 @@
     .seed3::after {
         position: absolute;
         bottom: 20px;
-        right: 350px;
+        right: 245px;
     }
     .p-space {
         padding: 24px 0;
@@ -35,11 +27,6 @@
 }
 
 @media (max-width: $screen-sm-max) {
-    .anim-list {
-        li.masking {
-            background-position: 2px 662px;
-        }
-    }
     .cent {
         position: relative;
         margin: 0 auto;
@@ -97,14 +84,6 @@
         font-size: 42px;
         line-height: 42px;
         letter-spacing: 1px;
-        li.masking {
-            background-image: url("../img/bg-image.jpg");
-            background-position: -7px 656px;
-            background-size: cover;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
     }
     .cent {
         position: relative;

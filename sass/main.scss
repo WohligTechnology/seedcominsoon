@@ -51,7 +51,12 @@ nav li:hover .dropdown-menu {
 #map img {
     opacity: 1;
 }
-
+.position-center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    @include transform(translate(-50%,-50%));
+}
 a,
 .btn,
 [ui-sref] {
@@ -67,7 +72,6 @@ footer {
         margin: 0;
     }
 }
-
 //bootstrap forms
 .input-lg,
 .input-group-lg>.form-control,
@@ -78,7 +82,6 @@ footer {
     border-radius: 0;
     @include box-shadow(none);
 }
-
 .form-control:focus {
     border-color: $brand-primary;
     outline: 0;
@@ -145,16 +148,6 @@ footer {
     font-weight: 700;
     line-height: 100px;
     letter-spacing: 5px;
-    color: #ffffff;
-    text-shadow: 0px 7px 5.46px rgba(171, 171, 171, 1);
-    li.masking {
-        // background-image: url("../img/bg-image.jpg");
-        background-position: -78px 967px;
-        background-size: cover;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
 }
 
 .foot-txt {
@@ -200,14 +193,12 @@ footer {
 }
 
 .foot {
-    // position: fixed;
-    // bottom: 70px;
+    position: absolute;
+    bottom: 40px;
     padding-top: 1px;
     background: transparent;
     width: 100%;
-    // padding: 0 300px;
 }
-
 // p {
 //     font-family: rubik;
 //     letter-spacing: 1px;
@@ -230,8 +221,8 @@ footer {
     position: absolute;
     left: -48px;
     top: 14px;
+    opacity: 0;
 }
-
 .seed3::after {
     content: url("../img/rsz_seed3.png");
     height: 15px;
@@ -239,6 +230,7 @@ footer {
     position: absolute;
     bottom: 42px;
     right: 310px;
+    opacity: 0;
 }
 
 .cent {
@@ -249,11 +241,22 @@ footer {
 
 .p-space {
     padding: 15px 0;
+    opacity: 0;
 }
 
 .comp-logo {
     width: 250px;
 }
 
+.text_1,
+.text_2,
+.text_3{
+    opacity: 0;
+    color: #fff;
+    @include transform(translate(2px ,-40px));
+    position: relative;
+    display: block;
+}
 @import "fancybox-override";
 @import "mobile";
+@import "animation";
